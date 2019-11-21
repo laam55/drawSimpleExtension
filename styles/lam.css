@@ -1,66 +1,81 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font: bold 40px tahoma;
-    color: white;
+*{
+  margin:0px;
+  padding:0px;
+  font:bold 40px tahoma;
+  color:white;
 }
-
-body {
-    width: 342px;
-    height: 110px;
-    padding: 5px;
+.cha{
+  display:inline-block;
+  width:50px;
+  height:100px;
+  border-bottom:1px solid silver;
+  color:gray;
 }
-
-.pword {
-    display: inline-block;
-    width: 50px;
-    height: 100px;
-    border-bottom: 1px solid silver;
-    color: gray;
+.dongho{
+	width:155px;
+	text-align: center;
 }
-
-.word {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
+.dongho span{
+	font-size: 35px;
+	color:gray;
 }
-
-#l {
-    animation: anim 2s infinite;
-    background-color: #e6c145;
+.chu{
+  width:50px;
+  height:50px;
+  display:inline-block;
+  text-align:center;
+  line-height:50px;
+  /*box-shadow: 1px 1px 10px -1px gray;*/
+}
+#l{
+  animation:anim 2s infinite;
+  background-color:#E6C145;
   
 }
-
-#a {
-    animation: anim 2s infinite;
-    animation-delay: 0.3s;
-    background-color: #22b14c;
+#a{
+  animation:anim 2s infinite;
+  animation-delay:0.3s;
+  background-color:#22B14C;
 }
-
-#m {
-    animation: anim 2s infinite;
-    animation-delay: 0.46s;
-    background-color: #f94e3f;
+#m{
+  animation:anim 2s infinite;
+  animation-delay:0.46s;
+  background-color:#F94E3F;
 }
-
-@keyframes anim {
-    0% {
-       transform:translateY(0);
-    }
-    50% {
-       transform:translateY(50px);
-    }
-    100% {
-       transform:translateY(0);
-    }
+@keyframes anim{
+	0%{
+	transform:translateY(0);
+	}
+	50%{
+	transform:translateY(50px);
+	}
+	100%{
+	transform:translateY(0);
+	}
 }
-
-#show {
-    margin-top: 5px;
-    width: 342px;
-    height: 342px;
-    background-color: #eee;
-    z-index: 10;
+body{
+	width: 342px;
+	height:110px;
+  padding:5px;
+}
+#phpcode{
+  margin-top:5px;
+  width:342px;
+  height:342px;
+  background-color: #fefefe;
+}
+#show{
+  margin-top:5px;
+  width:342px;
+  height:342px;
+  background-color: #eeeeee;
+  z-index: 10;
+}
+#alert {
+  position: absolute;
+  top: 115px;
+  left: 10px;
+  z-index: 999;
+  font-size: 13px;
+  color: black;
 }
